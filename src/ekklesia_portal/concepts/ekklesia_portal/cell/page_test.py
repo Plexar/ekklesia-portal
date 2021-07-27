@@ -13,4 +13,5 @@ class PageTestCell(LayoutCell):
     test_html = Markup("<div>HTML from the cell (div should not be escaped)</div>")
 
     def now(self):
+        raise RuntimeError("this is broken on purpose")
         return datetime.datetime.now()
